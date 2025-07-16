@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block titulo %}{% endblock %}</title>
+
+        <!-- mobile responsive meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This is meta description">
+        <meta name="author" content="Themefisher">
+
+        <!-- plugins -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" media="screen">
+    </head>
+    <body>
+        {% include "navigation.html" %}
+        
+        {% block conteudo %}
+        {% endblock %}
+
+        {% include "footer.html" %}
+
+        <!-- JS Plugins -->
+        <script src="{{ url_for('static', filename='javascript/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='javascript/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='javascript/slick.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='javascript/instafeed.min.js') }}"></script>
+
+        <!-- Main Script -->
+        <script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+    </body>
+</html>
