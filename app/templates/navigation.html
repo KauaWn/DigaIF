@@ -2,7 +2,7 @@
 <header class="navigation fixed-top">
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-white">
-    <a class="navbar-brand order-1" href="index.html">
+    <a class="navbar-brand order-1" href="{{ url_for('home') }}">
         <img class="img-fluid" width="100px" src="{{ url_for('static', filename='img/logo.png') }}"
         alt="Reader | Hugo Personal Blog Template">
     </a>
@@ -60,7 +60,9 @@
             
             <a class="dropdown-item" href="author.html">Author</a>
             
-            <a class="dropdown-item" href="author-single.html">Author Single</a>
+            <a class="dropdown-item" href="{{ url_for('author_single') }}">Author Single</a>
+
+            <a class="dropdown-item" href="{{ url_for('author_single2') }}">Author Single 2</a>
 
             <a class="dropdown-item" href="advertise.html">Advertise</a>
             
