@@ -33,3 +33,8 @@ def author_single2():
         "foto": "https://www.gravatar.com/avatar/df5fe0c7d20b494dd2c68e0d8ef9bbf2?s=320&pg&d=identicon"
     }
     return render_template("author_single.html", author_single = author)
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")

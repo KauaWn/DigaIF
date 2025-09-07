@@ -82,13 +82,13 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #4FD675;
+  background: #000000;
   color: #fff;
-  border-color: #4FD675;
+  border-color: #00fff2;
 }
 .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
-  background: #4FD675 !important;
-  border-color: #4FD675 !important;
+  background: #00fff2 !important;
+  border-color: #00fff2 !important;
 }
 
 .btn-outline-primary {
@@ -1081,18 +1081,19 @@ mark {
   color: #333;
 }
 .form-group .form-control {
-  border-color: #EBEBEB;
+  border-color: #ffffff;
   border: 1px solid transparent;
-  background-color: #F9F9F9;
+  background-color: #ececec;
   height: 50px;
 }
 .form-group .form-control:focus {
   outline: 0;
   box-shadow: none;
-  border-color: #4FD675;
+  border-color: #00fff2;
 }
 .form-group textarea.form-control {
-  height: 120px;
+  height: 50px;
+  padding-top: 12.5px;
 }
 
 .widget {
