@@ -82,13 +82,13 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #000000;
+  background: #2cf005;
   color: #fff;
-  border-color: #00fff2;
+  border-color: #f6fafa;
 }
 .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
   background: #00fff2 !important;
-  border-color: #00fff2 !important;
+  border-color: #f0f0f0 !important;
 }
 
 .btn-outline-primary {
@@ -260,7 +260,7 @@ mark {
   width: 100%;
   top: 0;
   left: 0;
-  background: #000;
+  background: #000000;
   opacity: 0.5;
 }
 
@@ -507,30 +507,7 @@ mark {
   position: relative;
   z-index: 1;
 }
-.header-shape-1 {
-  position: absolute;
-  left: 20%;
-  top: 25%;
-}
-.header-shape-1 .path {
-  fill: #4FD675;
-}
-.header-shape-2 {
-  position: absolute;
-  right: 20%;
-  top: 25%;
-}
-.header-shape-2 .path {
-  fill: #4FD675;
-}
-.header-shape-3 {
-  position: absolute;
-  right: 25%;
-  bottom: 15%;
-}
-.header-shape-3 .path {
-  fill: #4FD675;
-}
+
 .header-border {
   position: absolute;
   bottom: -35px;
@@ -1089,7 +1066,7 @@ mark {
 .form-group .form-control:focus {
   outline: 0;
   box-shadow: none;
-  border-color: #00fff2;
+  border-color: #00ff22;
 }
 .form-group textarea.form-control {
   height: 50px;
@@ -1251,12 +1228,7 @@ mark {
   color: #4FD675;
 }
 
-.instagram-post img {
-  height: 160px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+
 
 .error {
   padding: 130px 0;
