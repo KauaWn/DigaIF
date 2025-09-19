@@ -14,7 +14,7 @@ def terms():
 
 @app.route("/error404")
 def error404():
-    return render_template("index.html")
+    return render_template("404.html")
 
 
 @app.route("/author_single")
@@ -38,3 +38,7 @@ def author_single2():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+@app.route("/about-me")
+def about_me():
+    return render_template("about-me.html")
