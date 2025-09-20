@@ -42,3 +42,11 @@ def contact():
 @app.route("/about-me")
 def about_me():
     return render_template("about-me.html")
+
+@app.route("/post-details")
+def post_details():
+    return render_template("post-details.html")
+
+@app.route("/tags")
+def tags():
+    return render_template("tags.html")

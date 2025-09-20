@@ -8,14 +8,8 @@
     </a>
     <div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">
         <ul class="navbar-nav mx-auto">
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            homepage <i class="ti-angle-down ml-1"></i>
-            </a>
-            <div class="dropdown-menu">
-            <a class="dropdown-item" href="index-full.html">Homepage Full Width</a>
-            </div>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for ('home') }}">Homepage</a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -41,19 +35,13 @@
             </a>
             <div class="dropdown-menu">
             
-            <a class="dropdown-item" href="author.html">Author</a>
-            
             <a class="dropdown-item" href="{{ url_for('author_single') }}">Author Single</a>
 
             <a class="dropdown-item" href="{{ url_for('author_single2') }}">Author Single 2</a>
-
-            <a class="dropdown-item" href="advertise.html">Advertise</a>
             
-            <a class="dropdown-item" href="post-details.html">Post Details</a>
+            <a class="dropdown-item" href="{{ url_for('post_details') }}">Post Details</a>
             
-            <a class="dropdown-item" href="post-elements.html">Post Elements</a>
-            
-            <a class="dropdown-item" href="tags.html">Tags</a>
+            <a class="dropdown-item" href="{{ url_for('tags') }}">Tags</a>
 
             <a class="dropdown-item" href="search-result.html">Search Result</a>
 
@@ -67,9 +55,8 @@
             
             </div>
         </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="shop.html">Shop</a>
+        <li class="nav-item"> 
+            <a class="nav-link" href="pag_em_branco.html">ola</a>
         </li>
         </ul>
     </div>
