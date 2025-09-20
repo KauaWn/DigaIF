@@ -26,14 +26,14 @@ body {
 
 p {
   font-weight: 400;
-  color: #555;
+  color: #adcbd9;
   font-size: 15px;
   line-height: 1.7;
   font-family: "Nunito Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #333;
+  color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   line-height: 1.2;
@@ -93,17 +93,17 @@ h6, .h6 {
 
 .btn-outline-primary {
   background: transparent;
-  color: #4FD675;
-  border-color: #4FD675;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary.focus, .btn-outline-primary.active {
-  background: #4FD675 !important;
-  border-color: #4FD675 !important;
+  background: #91bce4 !important;
+  border-color: #ffffff !important;
   color: #fff;
 }
 
 body {
-  background-color: #fff;
+  background-color: #232f4b;
   overflow-x: hidden;
 }
 
@@ -311,6 +311,7 @@ mark {
   border-bottom: 1px solid #EBEBEB;
   transition: 0.2s ease;
   padding: 10px 0;
+  background-color: white;
 }
 .navigation.nav-bg {
   background-color: #fff;
@@ -653,7 +654,7 @@ mark {
 
 .card {
   border: 0;
-  background-color: #fff;
+  background-color: #324569;
   transition: 0.2s ease;
 }
 .card-body {
@@ -671,7 +672,7 @@ mark {
   align-items: center;
   flex-wrap: wrap;
   font-size: 12px;
-  color: #777;
+  color: #adcbd9;
   margin-bottom: 0;
 }
 .card-meta li {
@@ -686,7 +687,7 @@ mark {
   margin-right: 5px;
 }
 .card-meta-author {
-  color: inherit;
+  color: #d1dde2;
 }
 .card-meta-author img {
   height: 20px;
@@ -697,7 +698,7 @@ mark {
   border-radius: 50%;
 }
 .card-meta-author:hover {
-  color: #4FD675;
+  color: #91bce4;
 }
 .card-meta-tag {
   margin-bottom: 0;
@@ -711,21 +712,21 @@ mark {
   padding: 0px 8px;
   border-radius: 30px;
   border: 1px solid #EBEBEB;
-  color: #555;
+  color: #ffffff;
   display: inline-block;
 }
 .card-meta-tag li a:hover {
-  background-color: #4FD675;
-  border-color: #4FD675;
+  background-color: #91bce4;
+  border-color: #ffffff;
   color: #fff;
 }
 
 .post-title {
-  color: #333;
+  color: #ffffff;
   font-weight: 700;
 }
 .post-title:hover {
-  color: #4FD675;
+  color: #91bce4;
 }
 
 .social-icons {
@@ -769,7 +770,7 @@ mark {
   width: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background: rgba(79, 214, 117, 0.5);
+  background: #8fd5ff78;
   color: #fff;
   border: 0;
 }
@@ -782,7 +783,7 @@ mark {
   outline: 0;
 }
 .slick-arrow:hover {
-  background: #4FD675;
+  background: #9bdaf3;
 }
 
 .prevArrow {

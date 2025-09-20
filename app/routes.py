@@ -50,3 +50,11 @@ def post_details():
 @app.route("/tags")
 def tags():
     return render_template("tags.html")
+
+@app.route("/search-no-results")
+def search_no_result():
+    return render_template("search-no-result.html")
+
+@app.route("/search-results")
+def search_result():
+    return render_template("search-result.html")

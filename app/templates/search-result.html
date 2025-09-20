@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% block titulo %}Search Results{% endblock %}
+{% block conteudo %}
+<div class="py-3"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 mb-4">
+        <h1 class="h2 mb-4">Search results for 
+          <mark>Use+apples+to+give+your+bakes+caramel</mark>
+        </h1>
+      </div>
+      <div class="col-lg-10">
+        <article class="card mb-4">
+          <div class="row card-body">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="post-slider slider-sm">
+                <img src="{{ url_for('static', filename ='img/pinto.png')}}" class="card-img" alt="post-thumb" style="height:200px; object-fit: cover;">
+                <img src="{{ url_for('static', filename ='img/littlecasa.png')}}" class="card-img" alt="post-thumb" style="height:200px; object-fit: cover;">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h3 class="h4 mb-3"><a class="post-title" href="post-elements.html">Observação sobre esse post.</a></h3>
+              <ul class="card-meta list-inline">
+                <li class="list-inline-item">
+                  <a href="{{ url_for ('author_single') }}" class="card-meta-author">
+                    <img src="{{ url_for('static', filename ='img/fotinha.jpg')}}" alt="John Doe">
+                    <span>Kauã Angelo</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-timer"></i>1 Min To Read
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-calendar"></i>20 Sep, 2025
+                </li>
+                <li class="list-inline-item">
+                  <ul class="card-meta-tag list-inline">
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Demo</a></li>
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Elements</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <p>Não pretendo apagar esse post assim de cara, mas reutilizá-lo para criar as mecânicas e para esse momento apenas mudar o endereço e a aparência, já que não vamos usar post-elements.html.</p>
+              <a href="post-elements.html" class="btn btn-outline-primary">Ler mais</a>
+            </div>
+          </div>
+        </article>
+      
+        <article class="card mb-4">
+          <div class="row card-body">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="post-slider slider-sm">
+                <img src="{{ url_for('static', filename ='img/post/post-3.jpg')}}" class="card-img" alt="post-thumb" style="height:200px; object-fit: cover;">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h3 class="h4 mb-3"><a class="post-title" href="{{ url_for ('post_details') }}">Advice From a Twenty Something</a></h3>
+              <ul class="card-meta list-inline">
+                <li class="list-inline-item">
+                  <a href="{{ url_for ('author_single') }}" class="card-meta-author">
+                    <img src="{{ url_for('static', filename ='img/john-doe.jpg')}}">
+                    <span>Mark Dinn</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-timer"></i>2 Min To Read
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-calendar"></i>14 jan, 2020
+                </li>
+                <li class="list-inline-item">
+                  <ul class="card-meta-tag list-inline">
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Decorate</a></li>
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Creative</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <p>It’s no secret that the digital industry is booming. From exciting startups to global brands</p>
+              <a href="{{ url_for ('post_details') }}" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="row card-body">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="post-slider slider-sm">
+                <img src="{{ url_for('static', filename ='img/post/post-7.jpg')}}" class="card-img" alt="post-thumb" style="height:200px; object-fit: cover;">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h3 class="h4 mb-3"><a class="post-title" href="{{ url_for ('post_details') }}">Advice From a Twenty Something</a></h3>
+              <ul class="card-meta list-inline">
+                <li class="list-inline-item">
+                  <a href="{{ url_for ('author_single') }}" class="card-meta-author">
+                    <img src="{{ url_for('static', filename ='img/john-doe.jpg')}}">
+                    <span>Charls Xaviar</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-timer"></i>2 Min To Read
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-calendar"></i>14 jan, 2020
+                </li>
+                <li class="list-inline-item">
+                  <ul class="card-meta-tag list-inline">
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Color</a></li>
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Recipe</a></li>
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Fish</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <p> It’s no secret that the digital industry is booming. From exciting startups to global brands</p>
+              <a href="{{ url_for ('post_details') }}" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="row card-body">
+            <div class="col-12">
+              <h3 class="h4 mb-3"><a class="post-title" href="{{ url_for ('post_details') }}">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
+              <ul class="card-meta list-inline">
+                <li class="list-inline-item">
+                  <a href="{{ url_for ('author_single') }}" class="card-meta-author">
+                    <img src="{{ url_for('static', filename ='img/kate-stone.jpg')}}" alt="Kate Stone">
+                    <span>Kate Stone</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-timer"></i>2 Min To Read
+                </li>
+                <li class="list-inline-item">
+                  <i class="ti-calendar"></i>14 jan, 2020
+                </li>
+                <li class="list-inline-item">
+                  <ul class="card-meta-tag list-inline">
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Wow</a></li>
+                    <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Tasty</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <p>It’s no secret that the digital industry is booming. From exciting startups to global brands, companies are reaching out to digital agencies, responding to the new possibilities available.</p>
+              <a href="{{ url_for ('post_details') }}" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
