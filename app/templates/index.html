@@ -5,7 +5,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-9 mx-auto">
-        <h1 class="mb-5">What Would You <br> Like To Read Today?</h1>
+        <h1 class="gradiente_corh1 mb-5">What Would You <br> Like To Read Today?</h1> <!-- OBS: Não usar ID quando for colocar 
+        mais de um elemento definido, e sim CLASSE, já que os elementos podem ter várias classes e podemos retuilizá-las, 
+        como nesse caso que temos duas classes (a classe mais pra esquerda sobrepõe as outras, não há necessidade de usar ID 
+        e de forma errada!! Nesse caso só não muda independente de onde estiver a classe porque mb-5 não foi definido lá)-->
         <ul class="list-inline widget-list-inline">
           <li class="list-inline-item"><a href="{{ url_for ('tags') }}">City</a></li>
           <li class="list-inline-item"><a href="{{ url_for ('tags') }}">Color</a></li>

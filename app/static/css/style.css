@@ -16,6 +16,26 @@ VERSION:	Versoin Number
 -------------------------------------------------------------------*/
 /*  typography */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+
+@keyframes animacao-gradiente { /*Animação para o texto h1 com gradiente animado, os comandos com comentários é porque aqui ia pra um lado e pra o outro,
+  não ficando uma animação do gradiente se deslocando pro lado de forma contínua.*/
+  /*0% {
+    background-position: 0% 50%; / Começa no 0% 
+  }
+  50% {
+    background-position: 100% 50%; / Se move até 100% 
+  }
+  100% {
+    background-position: 0% 50%; / Volta para a posição inicial 
+  } */
+  from {
+    background-position: 0% 50%; /* Posição inicial */
+  }
+  to {
+    background-position: 100% 50%; /* Posição final */
+  }
+}
+
 body {
   line-height: 1.7;
   font-family: "Nunito Sans", sans-serif;
@@ -32,6 +52,20 @@ p {
   font-family: "Nunito Sans", sans-serif;
 }
 
+.gradiente_corh1{
+  background-image: linear-gradient(to right, #4c66ad, #6ad6de, #4c66ad, #6ad6de, #4c66ad); /* ficou uma transição 
+  contínua usando essa quantidade de cores. bom sempre usar 5 para ter certeza que a animação fique fluida e com corte invisivel*/
+  background-size: 200% 100%;
+  background-clip:text; /*Para fazer gradiente normal usamos esses códigos, 
+  linear-gradient cria a imagem gradiente, size é so pra aumentar por causa da animação, 
+  color: transparent é para conseguir ver o gradiente no texto, 
+  clip: text é para cortar a imagem de fundo usando o texto como extremidades 
+  e inline-block havia sido usado para ajusta o tamanho da imagem ao texto, porque o gradiente não aparecia completo em textos menores*/
+  color:transparent;
+  /*display: inline-block; tirei isso, mas deixei aqui pra me lembrar que usa isso pro gradiente normal sem animação.*/
+  animation: animacao-gradiente 4s linear infinite; /*Importando a animação e colocando a transição e a velocidade, tinha usado ease ao 
+  inves do linear quando foi os comandos descartados que a animação do gradiente ia e voltava.*/
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
