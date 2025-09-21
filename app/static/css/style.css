@@ -116,12 +116,12 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #2cf005;
+  background: #73bfe5;
   color: #fff;
   border-color: #f6fafa;
 }
 .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
-  background: #00fff2 !important;
+  background: #5585b3 !important;
   border-color: #f0f0f0 !important;
 }
 
@@ -208,8 +208,8 @@ hr {
 mark {
   padding: 0;
   background-color: transparent;
-  border-bottom: 3px solid #4FD675;
-  color: #4FD675;
+  border-bottom: 3px solid #b4d9ff;
+  color: #75aae3;
 }
 
 .section {
@@ -233,7 +233,7 @@ mark {
   content: "";
   height: 2px;
   width: 60px;
-  background-color: #4FD675;
+  background-color: #b4d9ff;
 }
 
 .bg-cover {
@@ -527,7 +527,7 @@ mark {
   bottom: -60px;
   left: 0;
   width: 100%;
-  stroke: #4FD675;
+  stroke: #75aae3;
 }
 
 .header {
@@ -548,7 +548,7 @@ mark {
   bottom: -35px;
   left: 0;
   width: 100%;
-  stroke: #4FD675;
+  stroke: #75aae3;
 }
 
 .author {
@@ -838,13 +838,13 @@ mark {
   text-align: center;
   padding: 0;
   margin-right: 10px;
-  border: 1px solid #4FD675;
-  color: #4FD675;
+  border: 1px solid #91bce4;
+  color: #91bce4;
 }
 .pagination .page-item .page-link:hover {
-  background: #4FD675;
+  background: #91bce4;
   color: #fff;
-  border-color: #4FD675;
+  border-color: white;
 }
 .pagination .page-item .page-link:focus {
   box-shadow: none;
@@ -853,9 +853,9 @@ mark {
   border-radius: 50%;
 }
 .pagination .page-item.active .page-link {
-  background: #4FD675;
+  background: #91bce4;
   color: #fff;
-  border-color: #4FD675;
+  border-color: white;
 }
 
 .author-block {
@@ -1090,7 +1090,7 @@ mark {
 .form-group label {
   font-size: 16px;
   font-weight: 700;
-  color: #333;
+  color: #a7cdf5;
 }
 .form-group .form-control {
   border-color: #ffffff;
@@ -1316,7 +1316,7 @@ mark {
   position: absolute;
   top: -75px;
   width: 100%;
-  stroke: #4FD675;
+  stroke: #75aae3;
 }
 
 .image-wrapper {
