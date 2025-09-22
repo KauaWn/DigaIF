@@ -40,7 +40,7 @@ body {
   line-height: 1.7;
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #555;
+  color: #557da5;
   font-size: 15px;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 ::selection {
-  background: #2ec458;
+  background: #70e4ff;
   color: #fff;
 }
 
@@ -303,7 +303,7 @@ mark {
 }
 
 .text-primary {
-  color: #4FD675 !important;
+  color: #adcbd9 !important;
 }
 
 .text-default {
@@ -369,7 +369,7 @@ mark {
   color: #333;
 }
 .navbar-white .navbar-nav .nav-link:hover {
-  color: #4FD675;
+  color: #78ddeb;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -432,7 +432,7 @@ mark {
   border-radius: inherit;
 }
 .navbar .dropdown-item:hover {
-  color: #4FD675 !important;
+  color: #78ddeb !important;
   background-color: #F9F9F9;
 }
 
@@ -498,30 +498,7 @@ mark {
   position: relative;
   z-index: 1;
 }
-.banner-shape-1 {
-  position: absolute;
-  left: 20%;
-  top: 25%;
-}
-.banner-shape-1 .path {
-  fill: #51d877;
-}
-.banner-shape-2 {
-  position: absolute;
-  right: 20%;
-  top: 25%;
-}
-.banner-shape-2 .path {
-  fill: #4FD675;
-}
-.banner-shape-3 {
-  position: absolute;
-  right: 25%;
-  bottom: 15%;
-}
-.banner-shape-3 .path {
-  fill: #4FD675;
-}
+
 .banner-border {
   position: absolute;
   bottom: -60px;
@@ -555,36 +532,13 @@ mark {
   position: relative;
   padding: 120px 0 150px;
 }
-.author-shape-1 {
-  position: absolute;
-  left: 15%;
-  top: 25%;
-}
-.author-shape-1 .path {
-  fill: #4FD675;
-}
-.author-shape-2 {
-  position: absolute;
-  right: 15%;
-  top: 25%;
-}
-.author-shape-2 .path {
-  fill: #4FD675;
-}
-.author-shape-3 {
-  position: absolute;
-  right: 20%;
-  bottom: 15%;
-}
-.author-shape-3 .path {
-  fill: #4FD675;
-}
+
 .author-border {
   position: absolute;
   bottom: -15px;
   left: 0;
   width: 100%;
-  stroke: #4FD675;
+  stroke: #75aae3;
   z-index: -1;
 }
 
@@ -671,7 +625,7 @@ mark {
   display: block;
   margin: 0 auto 10px;
   border: 5px solid transparent;
-  box-shadow: 0 0 0 2px #4FD675;
+  box-shadow: 0 0 0 2px #78ddeb;
 }
 @media (max-width: 1200px) {
   .author-image {
@@ -1101,7 +1055,7 @@ mark {
 .form-group .form-control:focus {
   outline: 0;
   box-shadow: none;
-  border-color: #00ff22;
+  border-color: #54d5ff;
 }
 .form-group textarea.form-control {
   height: 50px;
@@ -1214,14 +1168,14 @@ mark {
 }
 .widget-list-inline li a {
   padding: 2px 15px;
-  border: 1px solid #4FD675;
+  border: 1px solid #78ddeb;
   border-radius: 30px;
   display: block;
   color: #555;
 }
 .widget-list-inline li a:hover {
-  border-color: #4FD675;
-  background: #4FD675;
+  border-color: #78ddeb;
+  background: #78ddeb;
   color: #fff;
 }
 .widget-card {
@@ -1310,7 +1264,7 @@ mark {
   padding: 5px;
 }
 .footer-list a:hover {
-  color: #4FD675;
+  color: #78ddeb;
 }
 .footer-border {
   position: absolute;
