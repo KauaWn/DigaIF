@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block titulo %}Search no results{% endblock %}
+{% block conteudo %}
+<div class="py-3"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="text-center col-lg-10 mb-5">
+        <h1 class="mb-5">Conta registrada com sucesso!</h1>
+      </div>
+      <div class="col-lg-10 text-center">
+        <img class="mb-5" src="{{ url_for('static', filename ='img/no-search-found.svg')}}" alt=""> <!--ainda não pensei na
+        imagem, provavelmente simbolo de confere, mas ainda vou ver, apenas testando.-->
+        <h3>Voltar para a página inicial</h3>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

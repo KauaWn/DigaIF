@@ -54,7 +54,7 @@
           <p>Faça o seu cadastro abaixo.</p>
         </div>
         
-        <form method="POST" action="#">
+        <form method="GET" action="{{url_for ('registrado')}}">
           <div class="form-group">
             <label for="name">Seu nome (obrigatório)</label>
             <input type="text" name="name" id="name" class="form-control" placeholder="Digite aqui" required>

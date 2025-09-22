@@ -58,3 +58,13 @@ def search_no_result():
 @app.route("/search-results")
 def search_result():
     return render_template("search-result.html")
+
+@app.route("/registro-sucesso")
+#O route por ventura não aceita o post por si só, que era o método da tela de login,
+#então temos que introduzir na funçao das rotas caso o uso (não foi o caso, mas poderia colocar).
+#@app.route("/registro-sucesso", method=['GET','POST']) e fazia um if para colher as informações tipo:
+#name = request.form.get('name'), tanto para o nome quanto pra email, senha, etc.
+def registrado():
+    return render_template("registro-sucesso.html")
+#tem que fazer uma condição que se caso já exista tal email, aí não funciona porque já existe uma conta criada, 
+#e pra questão de matrícula também (pensar nisso quando for pra usar o mysql)
