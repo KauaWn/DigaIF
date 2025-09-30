@@ -20,7 +20,7 @@ def error404():
 @app.route("/author_single")
 def author_single():
     author = {
-        "nome": "asdsad",
+        "nome": "kaua angelo",
         "foto": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109"
     }
     return render_template("author_single.html", author_single = author)
@@ -29,7 +29,7 @@ def author_single():
 @app.route("/author_single2")
 def author_single2():
     author = {
-        "nome": "afshgadfhfdh",
+        "nome": "alysson daniel",
         "foto": "https://www.gravatar.com/avatar/df5fe0c7d20b494dd2c68e0d8ef9bbf2?s=320&pg&d=identicon"
     }
     return render_template("author_single.html", author_single = author)
