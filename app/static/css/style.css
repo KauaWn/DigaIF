@@ -142,7 +142,7 @@ body {
 }
 
 ::-moz-selection {
-  background: #2ec458;
+  background: #1cc24b;
   color: #fff;
 }
 
@@ -189,7 +189,7 @@ select:focus {
 }
 
 a:hover {
-  color: #4FD675;
+  color: #78ddeb;
 }
 
 .slick-slide {
@@ -451,7 +451,7 @@ mark {
   z-index: 1;
 }
 .search-bar input:focus {
-  border-color: #4FD675;
+  border-color: #78ddeb;
   outline: 0;
 }
 .search-bar input::-moz-placeholder {
