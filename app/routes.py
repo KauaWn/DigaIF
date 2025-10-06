@@ -21,7 +21,7 @@ def error404():
 def author_single():
     author = {
         "nome": "kaua angelo",
-        "foto": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109"
+        "foto": "https://imgs.search.brave.com/GS83tZwHHu2lC0DP224iGoatEU4ZU5hxltAjnnpw5Ss/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk1L1Jh/dWxfU2VpeGFzXyUy/ODE5NzIlMjlfY29s/b3JpemVkLnRpZi9s/b3NzeS1wYWdlMS0y/NTBweC1SYXVsX1Nl/aXhhc18lMjgxOTcy/JTI5X2NvbG9yaXpl/ZC50aWYuanBn"
     }
     return render_template("author_single.html", author_single = author)
 
@@ -30,7 +30,7 @@ def author_single():
 def author_single2():
     author = {
         "nome": "alysson daniel",
-        "foto": "https://www.gravatar.com/avatar/df5fe0c7d20b494dd2c68e0d8ef9bbf2?s=320&pg&d=identicon"
+        "foto": "https://imgs.search.brave.com/CBwHzvh-ox3sw3iK9zdTyCllMyq5xJ8WLSr7a1evqLY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk4ySmpZbVl3/T1dVdE9UUTJPUzAw/WTJFMkxXRXdaVFl0/TkRjMVlXRTVOamsy/TldJMFhrRXlYa0Zx/Y0djQC5qcGc"
     }
     return render_template("author_single.html", author_single = author)
 

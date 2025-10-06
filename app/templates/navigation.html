@@ -35,17 +35,17 @@
             </a>
             <div class="dropdown-menu">
             
-            <a class="dropdown-item" href="{{ url_for('author_single') }}">Author Single</a>
+            <a class="dropdown-item" href="{{ url_for('author_single') }}">Autor</a>
 
-            <a class="dropdown-item" href="{{ url_for('author_single2') }}">Author Single 2</a>
+            <a class="dropdown-item" href="{{ url_for('author_single2') }}">Autor</a>
             
-            <a class="dropdown-item" href="{{ url_for('post_details') }}">Post Details</a>
+            <a class="dropdown-item" href="{{ url_for('post_details') }}">Posts </a>
             
             <a class="dropdown-item" href="{{ url_for('tags') }}">Tags</a>
 
-            <a class="dropdown-item" href="{{ url_for('search_result') }}">Search Result</a>
+            <a class="dropdown-item" href="{{ url_for('search_result') }}">Resultados de Pesquisas</a>
 
-            <a class="dropdown-item" href="{{ url_for ('search_no_result')}}">Search Not Found</a>
+            <a class="dropdown-item" href="{{ url_for ('search_no_result')}}">Busca não encontrada</a>
             
             <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
             
@@ -61,18 +61,13 @@
         </ul>
     </div>
 
-    <div class="order-2 order-lg-3 d-flex align-items-center">
-        <select class="m-2 border-0 bg-transparent" id="select-language">
-        <option id="pt" value="" selected>PT</option>
-        <option id="en" value="">EN</option>
-        </select>
         
         <!-- search -->
         <form class="search-bar">
         <input id="search-query" name="s" type="search" placeholder="Pesquisar">
         </form>
         
-        <button class="navbar-toggler border-0 order-1" type="button" data-toggle="collapse" data-target="#navigation">
+        <button class="navbar-toggler border-0 order-3" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
         </button>
     </div>
