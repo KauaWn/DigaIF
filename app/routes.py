@@ -1,6 +1,18 @@
 from app import app
 from flask import render_template
+import json
+import os
 
+
+def ler_posts():
+    caminho = os.path.join(os.path.dirname(__file__), 'posts.json')
+    with open(caminho, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+@app.route('/')
+def index():
+    posts = ler_posts()  # pega os posts do JSON
+    return render_template('index.html', posts=posts)
 
 @app.route("/")
 def home():

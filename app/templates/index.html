@@ -27,11 +27,15 @@
         <h2 class="h5 section-title">Escolha dos editores</h2>
         <article class="card">
           <div class="post-slider slider-sm">
-            <img src="{{ url_for('static', filename='img/post/post-1.jpg') }}" class="card-img-top" alt="post-thumb">
+          {% for post in posts %}
+            <img src="{{ post.imagem }}" class="card-img-top" alt="post-thumb">
+          {% endfor %}
           </div>
           
           <div class="card-body">
-            <h3 class="h4 mb-3"><a class="post-title" href="post-details.html">Denuncie o que ocorre no ifrn</a></h3>
+          {% for post in posts %}
+            <h3 class="h4 mb-3"><a class="post-title" href="post-details.html">{{ post.titulo }}</a></h3>
+          {% endfor %}
             <ul class="card-meta list-inline">
               <li class="list-inline-item">
                 <a href="{{ url_for('author_single') }}" class="card-meta-author">
@@ -51,7 +55,9 @@
                 </ul>
               </li>
             </ul>
-            <p>teto da vivencia caindo dnv</p>
+          {% for post in posts %}
+            <p>{{ post.conteudo}}</p>
+          {% endfor %}
             <a href="post-details.html" class="btn btn-outline-primary">Ler mais</a>
           </div>
         </article>
