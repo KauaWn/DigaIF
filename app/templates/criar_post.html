@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block titulo %}Novo Post{% endblock %}
+{% block conteudo %}
+<section class="criar_post_section section-sm">
+  <div class="container">
+    <div class="row card_criar_post">
+      <div class="col-lg-8 mx-auto">
+        
+        <div class="content mb-5">
+          <h2 id="we-would-love-to-hear-from-you">Nova postagem</h2>
+          <p>Preencha as lacunas abaixo para postar.</p>
+        </div>
+        
+        <form method="POST" action="{{url_for ('postado')}}">
+          <div class="form-group">
+            <label for="title">Título</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="Digite o título aqui" required>
+          </div>
+          <div class="form-group">
+            <label for="conteudo">Conteúdo</label>
+            <textarea type="text" name="conteudo" id="conteudo" class="form-control" placeholder="Digite o seu texto..." oninput="autoResize(this)" required></textarea>
+            <script>
+            function autoResize(el) {
+            el.style.height = '0px';  // reseta a altura pra forçar recalculo
+            const scrollHeight = el.scrollHeight;
+            const minHeight = 50;     // mesma altura mínima do CSS
+            el.style.height = (scrollHeight < minHeight ? minHeight : scrollHeight) + 'px';
+            }
+            </script>
+          </div>
+          <div class="form-group">
+            <label for="categoria">Selecione a categoria do seu post:</label>
+            <select id="categoria" name="categoria" class="form-control" required>
+              <option value="" disabled selected>Escolha uma categoria</option>
+              <option value="geral">Geral</option>
+              <option value="infraestrutura">Infraestrutura</option>
+              <option value="servicos">Serviços</option>
+              <option value="atendimento">Atendimento</option>
+              <option value="tecnologia">Financeiro</option>
+              <option value="meio_ambiente">Meio ambiente</option>
+              <option value="cultura">Cultura</option>
+              <option value="esportes">Esportes</option>
+              <option value="tecnologia">Tecnologia</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Postar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

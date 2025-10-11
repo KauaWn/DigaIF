@@ -1,8 +1,10 @@
 from app import app
-from flask import render_template
+from flask import render_template, redirect, url_for, request, jsonify
 import json
 import os
+import uuid
 
+postagem = os.path.join(os.path.dirname(__file__), "criar_post.json")
 
 def ler_posts():
     caminho = os.path.join(os.path.dirname(__file__), 'posts.json')
@@ -80,3 +82,38 @@ def registrado():
     return render_template("registro-sucesso.html")
 #tem que fazer uma condição que se caso já exista tal email, aí não funciona porque já existe uma conta criada, 
 #e pra questão de matrícula também (pensar nisso quando for pra usar o mysql)
+
+@app.route("/postagem_sucesso", methods=["GET", "POST"])
+def postado():
+    if request.method == "POST":
+        title = request.form.get("title")
+        conteudo = request.form.get("conteudo")
+        categoria = request.form.get("categoria")
+
+        # transformar em JSON
+        dados_json = {
+            "id": str(uuid.uuid4()),
+            "title": title,
+            "conteudo": conteudo,
+            "categoria": categoria
+        }
+        try:
+            with open(postagem, "r", encoding="utf-8") as f:
+                posts = json.load(f)
+        except FileNotFoundError:
+            posts = []
+
+        # adiciona a nova postagem
+        posts.append(dados_json)
+
+        # salva de volta no arquivo
+        with open(postagem, "w", encoding="utf-8") as f:
+            json.dump(posts, f, ensure_ascii=False, indent=4)
+
+        return redirect(url_for("criar_post"))  # ou pra onde quiser
+    return render_template("criar_post.html")
+
+@app.route("/criar_post")
+def criar_post():
+    return render_template("criar_post.html")
+

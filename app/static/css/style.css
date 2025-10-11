@@ -66,6 +66,24 @@ p {
   animation: animacao-gradiente 4s linear infinite; /*Importando a animação e colocando a transição e a velocidade, tinha usado ease ao 
   inves do linear quando foi os comandos descartados que a animação do gradiente ia e voltava.*/
 }
+
+.card_criar_post {
+  background-color: #2f3e61;
+  box-shadow: 0px 25px 65px rgba(255, 255, 255, 0.05) !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 30px;
+}
+
+#conteudo {
+  width: 100%;
+  min-height: 50px;       /* altura mínima */
+  max-height: 200px;     /* altura máxima */
+  box-sizing: border-box;
+  resize: none;           /* remove redimensionamento manual */
+  overflow-y: auto;       /* scroll aparece se passar do max-height */
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
@@ -215,6 +233,9 @@ mark {
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.criar_post_section {
+  padding-top: 150px !important;
 }
 .section-sm {
   padding-top: 80px;
