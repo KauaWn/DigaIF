@@ -7,14 +7,16 @@ import uuid
 postagem = os.path.join(os.path.dirname(__file__), "criar_post.json")
 
 def ler_posts():
-    caminho = os.path.join(os.path.dirname(__file__), 'posts.json')
+    caminho = os.path.join(os.path.dirname(__file__), 'criar_post.json')
+    if not os.path.exists(caminho):
+        return []
     with open(caminho, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 @app.route('/')
 def index():
-    posts = ler_posts()  # pega os posts do JSON
-    return render_template('index.html', posts=posts)
+    posta= ler_posts()  # pega os posts do JSON
+    return render_template('index.html', criar_post=posta)
 
 @app.route("/")
 def home():
